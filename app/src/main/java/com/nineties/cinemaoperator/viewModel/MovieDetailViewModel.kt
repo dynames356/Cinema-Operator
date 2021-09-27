@@ -11,9 +11,10 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import java.lang.StringBuilder
 
-class MovieDetailViewModel(movieID: Int): ViewModel() {
-    private val useCase: MovieUseCase = MovieUseCase()
-
+class MovieDetailViewModel(
+    movieID: Int,
+    private val useCase: MovieUseCase
+): ViewModel() {
     val movieDetailState = mutableStateOf(MovieDetailModel())
     val message = mutableStateOf("")
 

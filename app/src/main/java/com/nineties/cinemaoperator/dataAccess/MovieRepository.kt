@@ -6,9 +6,7 @@ import com.nineties.cinemaoperator.dataAccess.localAccess.APIConstant
 import com.nineties.cinemaoperator.model.MovieDetailModel
 import com.nineties.cinemaoperator.model.MovieListModel
 
-class MovieRepository() {
-    private val dataAccess: MovieData = MovieData()
-
+class MovieRepository(private val dataAccess: MovieData = MovieData()) {
     suspend fun listMovies(sortingAlgo: String, page: Int): APIResponse<MovieListModel> {
         return dataAccess.queryListing(sortingAlgo = sortingAlgo, page = page)
     }
