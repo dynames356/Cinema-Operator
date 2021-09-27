@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Cinema Operator</string>
+
+    <string name="reload_page">Reload Page</string>
+
+    <string name="order_by">Order By</string>
+    <string name="release_date">Release Date</string>
+    <string name="title">Title</string>
+    <string name="rating">Rating</string>
+    <string name="ascending">Ascending</string>
+    <string name="descending">Descending</string>
+
+    <string name="movie_title">Movie Title:</string>
+    <string name="popularity">Popularity:</string>
+
+    <string name="synopsis">Synopsis:</string>
+    <string name="genres">Genres:</string>
+    <string name="language">Languages:</string>
+    <string name="duration">Duration:</string>
+    <string name="not_available">Not Available</string>
+
+</resources>
